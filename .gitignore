@@ -1,0 +1,11 @@
+*~
+Makefile
+install_manifest.txt
+CMakeCache.txt
+CMakeFiles
+*.cmake
+ann2fig/ann2fig
+sample/ann_sample
+test/ann_test
+*.dylib
+*.a
