@@ -5,6 +5,9 @@ IF(APPLE)
     # Fix linking on 10.14+. See https://stackoverflow.com/questions/54068035
     LINK_DIRECTORIES(/usr/local/lib)
 ENDIF()
+if (MSVC)
+    add_definitions(-DANN_NO_RANDOM)
+ENDIF()
 
 add_definitions(-DDLL_EXPORTS)
 include_directories(${PROJECT_SOURCE_DIR}/include/)
