@@ -1,0 +1,5 @@
+file(GLOB LIB_SOURCES *cpp)
+add_executable(ann_test ${LIB_SOURCES})
+target_link_libraries(ann_test ann)
+target_link_libraries(ann_test m)
+install(TARGETS ann_test DESTINATION bin)
