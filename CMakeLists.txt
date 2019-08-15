@@ -9,5 +9,4 @@ add_subdirectory(test)
 add_subdirectory(sample)
 add_subdirectory(ann2fig)
 
-install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/
-  DESTINATION include)
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ TYPE INCLUDE)
