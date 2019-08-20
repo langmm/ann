@@ -1,1 +1,1 @@
-git diff efc7b59dccf6b5031cf049f6469f282e1e9aed70 HEAD ':(exclude)make_diff.sh' > cmake.patch
+git diff ac64a252438162a7bdedfd87c1059cf4b93b808b HEAD ':(exclude)make_diff.sh' > cmake.patch
