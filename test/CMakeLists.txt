@@ -1,0 +1,7 @@
+file(GLOB LIB_SOURCES *cpp)
+add_executable(ann_test ${LIB_SOURCES})
+target_link_libraries(ann_test ann)
+IF(NOT MSVC)
+    target_link_libraries(ann_test m)
+ENDIF()
+install(TARGETS ann_test RUNTIME)

@@ -1,0 +1,7 @@
+file(GLOB LIB_SOURCES *cpp)
+add_executable(ann2fig ${LIB_SOURCES})
+target_link_libraries(ann2fig ann)
+IF(NOT MSVC)
+    target_link_libraries(ann2fig m)
+ENDIF()
+install(TARGETS ann2fig RUNTIME)

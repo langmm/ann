@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 2.8)
+set(CMAKE_TRY_COMPILE_TARGET_TYPE "STATIC_LIBRARY")
+project(ann)
+if (MSVC)
+    add_definitions(-DANN_NO_RANDOM)
+ENDIF()
+
+add_definitions(-DDLL_EXPORTS)
+include_directories(${PROJECT_SOURCE_DIR}/include/)
+
+add_subdirectory(src)
+add_subdirectory(test)
+add_subdirectory(sample)
+add_subdirectory(ann2fig)
+
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ TYPE INCLUDE)
