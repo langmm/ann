@@ -1,5 +1,0 @@
-file(GLOB LIB_SOURCES *cpp)
-add_executable(ann_sample ${LIB_SOURCES})
-target_link_libraries(ann_sample ann)
-target_link_libraries(ann_sample m)
-install(TARGETS ann_sample RUNTIME)

@@ -1,5 +1,0 @@
-file(GLOB LIB_SOURCES *cpp)
-add_executable(ann2fig ${LIB_SOURCES})
-target_link_libraries(ann2fig ann)
-target_link_libraries(ann2fig m)
-install(TARGETS ann2fig RUNTIME)
